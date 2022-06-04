@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended:true}));
 app.get('/jokes', async (req, res, next) => {
   try {
     // TODO - filter the jokes by tags and content
-    const jokes = await Joke.findAll();
+    const jokes = [];
     res.send(jokes);
   } catch (error) {
     next(error)
