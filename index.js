@@ -11,6 +11,7 @@ app.get('/jokes', async (req, res, next) => {
     const jokes = [];
     res.send(jokes);
   } catch (error) {
+    console.error(error);
     next(error)
   }
 });
