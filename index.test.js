@@ -20,7 +20,7 @@ describe('GET /jokes', () => {
     it('should return a list of jokes, filtered by tag', async () => {
         const response = await request(app).get('/jokes?tags=anatomy');
         expect(response.status).toBe(200);
-        expect(response.body).toHaveLength(2);
+        expect(response.body).toHaveLength(3);
         expect(response.body[0]).toEqual(expect.objectContaining(seedData[3]));
     });
 
