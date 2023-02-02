@@ -3,7 +3,7 @@ A Jokes API with jokes searchable via query parameters
 
 Example call:
 ```sh
-$ curl -H "Accept: application/json" "http://localhost:4000/jokes?term=hipster&limit=2"
+$ curl -H "Accept: application/json" "http://localhost:4000/jokes?content=hipster&limit=2"
 ```
 
 Example response
