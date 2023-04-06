@@ -4,6 +4,7 @@ const { Joke } = require('./db');
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+const express = require("express");
 
 app.get('/jokes', async (req, res, next) => {
   try {
